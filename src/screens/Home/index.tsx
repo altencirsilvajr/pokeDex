@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Alert, View, ScrollView, Text, Image, Button } from 'react-native';
+import { Alert, View, ScrollView, Text, Image, Button} from 'react-native';
 import { styles } from './style';
 
 interface Pokemon {
@@ -15,16 +15,13 @@ interface PokemonDetails {
 
 const pokemons: Pokemon[] = [
   { id: 1, nome: "Bulbasauro" },
-  { id: 2, nome: "Ivysaur" },
-  { id: 3, nome: "Venusaur" },
-  { id: 4, nome: "Charmander" },
-  { id: 5, nome: "Charmeleon" },
-  { id: 6, nome: "Bulbasauro" },
-  { id: 7, nome: "Squirtle" },
-  { id: 8, nome: "Wartortle" }
+  { id: 2, nome: "Ivysaur" }
 ];
 
+
+
 export function Home() {
+
   const [pokemonEscolhido, setPokemonEscolhido] = useState<PokemonDetails | null>(null);
 
   const getPokemonData = (idPokemon: number) => {
@@ -65,7 +62,8 @@ export function Home() {
         {pokemons.map(pokemon => (
           <View style={styles.cardContainer} key={pokemon.id}>
             <Text style={styles.cardTitle}>{pokemon.nome}</Text>
-            <Button title="Dados do pokémon"
+
+            <Button title="Dados"
               onPress={() => getPokemonData(pokemon.id)}
             />
           </View>
