@@ -8,16 +8,30 @@ export const styles = StyleSheet.create ({
   },
   
   topo: { 
-    height: 100,
+    height: 190,
     padding: 20, 
     paddingTop: 40, 
-    marginBottom: 45, 
+    marginBottom: 20, 
     backgroundColor: '#e73e33' },
 
-  topoTitulo: { fontSize: 20, 
-    marginBottom: 15, 
+  topoTitulo: { 
+    fontSize: 25, 
+    marginTop: 18,
+    marginBottom: 10, 
     color: '#fff', 
     textAlign: 'center'},
+
+  searchBar:{
+    backgroundColor: '#fff',
+    borderRadius: 12,
+    marginTop: 22,
+    marginRight: 20,
+    marginBottom:40,
+    height: 55,
+    padding: 10,
+    fontSize: 15,
+    color:'#000000',
+  },
   
   cardContainer: { 
     borderWidth: 1, 
@@ -36,14 +50,34 @@ export const styles = StyleSheet.create ({
   pokemonBox: { 
     alignItems: 'center' },
 
-  pokemonNome: { 
-    fontSize: 22 },
-
   pokemonPeso: { 
-    fontSize: 18 },
+    fontSize: 25 ,
+    marginBottom: 5,
+    color: '#ff1a1a'
+  },
+  
+  pokemonHabilidades: { 
+    fontSize: 20,
+    color: '#ff1a1a'
+  },
+
+  pokemonEspecie: { 
+    fontSize: 25,
+    marginBottom: 5,
+    color: '#ff1a1a'
+  },
+  
+  pokemonTipos: {
+    fontSize: 25,
+    marginBottom: 5,
+    color: '#ff1a1a'
+  },
     
   pokemonImg:{ 
-    width: 200, 
-    height: 200,}
+    marginTop: 30,
+    marginLeft: 70,
+    marginRight: 45,
+    width: 250, 
+    height: 250,}
 
   });
